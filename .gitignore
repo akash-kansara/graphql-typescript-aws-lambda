@@ -1,0 +1,15 @@
+# Build folder
+# /dist
+
+# Serveless
+.serverless/
+
+# Dependency directories
+node_modules/
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# Unnecessary files, folders
+z/

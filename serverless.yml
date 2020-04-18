@@ -1,0 +1,24 @@
+service: graphql-typescript-aws-lambda
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  graphql:
+    handler: dist/index.server
+    events:
+    - http:
+        path: /graphql
+        method: post
+        cors: true
+  playground:
+    handler: dist/index.playground
+    events:
+    - http:
+        path: /playground
+        method: get
+        cors: true
