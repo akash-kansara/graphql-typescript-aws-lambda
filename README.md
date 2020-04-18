@@ -61,8 +61,14 @@ Open browser and go to http://localhost:3000/playground
 npm run build
 ```
 
-### Step 9: Deploy in production environment
+### Step 9: Deploy in AWS
 
 ```bash
 npm run deploy
+```
+
+### Step 10: Check API in AWS
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d "{ \"query\": \"{ serverTime }\" }" "GRAPHQL_FUNCTION_URL"
 ```

@@ -1,4 +1,4 @@
-service: graphql-typescript-aws-lambda
+service: graphql-test
 
 plugins:
   - serverless-offline
